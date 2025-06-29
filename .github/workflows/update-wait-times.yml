@@ -28,7 +28,7 @@ jobs:
 
       - name: Run scraper
         run: |
-          python public/scraper/get_data.py
+          python scraper/get_data.py
 
       - name: Commit and push changes
         run: |
