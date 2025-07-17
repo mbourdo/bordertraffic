@@ -5,7 +5,7 @@
       "lewistonqueenston": "No Delay",
       "rainbow": "No Delay",
       "whirlpool**(nexus only)": "N/A",
-      "peacebridge": "18 min"
+      "peacebridge": "No Delay"
     },
     "Trucks": {
       "lewistonqueenston": "No Delay",
@@ -16,7 +16,7 @@
     "Nexus": {
       "lewistonqueenston": "N/A",
       "rainbow": "N/A",
-      "whirlpool**(nexus only)": "CLOSED",
+      "whirlpool**(nexus only)": "No Delay",
       "peacebridge": "No Delay"
     }
   },
@@ -36,7 +36,7 @@
     "Nexus": {
       "lewistonqueenston": "No Delay",
       "rainbow": "N/A",
-      "whirlpool**(nexus only)": "CLOSED",
+      "whirlpool**(nexus only)": "No Delay",
       "peacebridge": "No Delay"
     }
   }
