@@ -5,7 +5,7 @@
       "lewistonqueenston": "No Delay",
       "rainbow": "No Delay",
       "whirlpool**(nexus only)": "N/A",
-      "peacebridge": "10 min"
+      "peacebridge": "No Delay"
     },
     "Trucks": {
       "lewistonqueenston": "No Delay",
@@ -28,10 +28,10 @@
       "peacebridge": "No Delay"
     },
     "Trucks": {
-      "lewistonqueenston": "10 min",
+      "lewistonqueenston": "13 min",
       "rainbow": "N/A",
       "whirlpool**(nexus only)": "N/A",
-      "peacebridge": "18 min"
+      "peacebridge": "36 min"
     },
     "Nexus": {
       "lewistonqueenston": "No Delay",
