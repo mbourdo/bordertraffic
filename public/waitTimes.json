@@ -3,7 +3,7 @@
   "to_usa": {
     "Autos": {
       "lewistonqueenston": "15 min",
-      "rainbow": "19 min",
+      "rainbow": "14 min",
       "whirlpool**(nexus only)": "N/A",
       "peacebridge": "39 min"
     },
@@ -11,7 +11,7 @@
       "lewistonqueenston": "No Delay",
       "rainbow": "N/A",
       "whirlpool**(nexus only)": "N/A",
-      "peacebridge": "19 min"
+      "peacebridge": "21 min"
     },
     "Nexus": {
       "lewistonqueenston": "N/A",
@@ -23,15 +23,15 @@
   "to_canada": {
     "Autos": {
       "lewistonqueenston": "No Delay",
-      "rainbow": "41 min",
+      "rainbow": "48 min",
       "whirlpool**(nexus only)": "N/A",
-      "peacebridge": "24 min"
+      "peacebridge": "20 min"
     },
     "Trucks": {
       "lewistonqueenston": "No Delay",
       "rainbow": "N/A",
       "whirlpool**(nexus only)": "N/A",
-      "peacebridge": "17 min"
+      "peacebridge": "19 min"
     },
     "Nexus": {
       "lewistonqueenston": "No Delay",
