@@ -2,20 +2,18 @@ name: Update Border Wait Times
 
 on:
   schedule:
-    # Run every 10 minutes
     - cron: '*/10 * * * *'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
 
 jobs:
   update-wait-times:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout the gh-pages branch
-      - name: Checkout gh-pages branch
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
-          ref: gh-pages
+          ref: main
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -28,13 +26,28 @@ jobs:
           pip install requests beautifulsoup4 lxml
 
       - name: Run scraper
-        run: |
-          python scraper/get_data.py
+        run: python scraper/get_data.py
 
-      - name: Commit and push changes
+      - name: Copy output to temp
         run: |
+          mkdir -p tmp
+          cp public/waitTimes.json tmp/
+
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Move JSON to gh-pages
+        run: |
+          cp tmp/waitTimes.json gh-pages/public/
+
+      - name: Commit and push to gh-pages
+        run: |
+          cd gh-pages
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add public/waitTimes.json
-          git diff --staged --quiet || git commit -m "Update border wait times - $(date)"
+          git diff --staged --quiet || git commit -m "Update waitTimes.json - $(date)"
           git push origin gh-pages
